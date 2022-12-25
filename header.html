@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Tier list of __YEAR__ shows and movies</title>
+<style>
+:root {
+	--bg: #282828;
+	--fg: #ebdbb2;
+	--inv-fg: #1d2021;
+	--border: #d5c4a1;
+	--s: #d3869b;
+	--a: #b8bb26;
+	--b: #98971a;
+	--c: #fabd2f;
+	--d: #d79921;
+	--z: #fb4931;
+}
+
+body {
+	color: var(--fg);
+	background-color: var(--bg);
+	font-family: sans-serif;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+section {
+	border: 2px solid var(--border);
+	display: grid;
+	grid-template-columns: 5em auto;
+	grid-template-rows: 10em;
+}
+
+section h2 {
+	border-right: 2px solid var(--border);
+	text-align: center;
+	margin: 0;
+	color: var(--inv-fg);
+	height: 100%;
+	position: relative;
+}
+section h2 div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+section img {
+	height: 100%;
+}
+
+#S h2 { background-color: var(--s); }
+#A h2 { background-color: var(--a); }
+#B h2 { background-color: var(--b); }
+#C h2 { background-color: var(--c); }
+#D h2 { background-color: var(--d); }
+#Z h2 { background-color: var(--z); }
+
+</style>
+</head>
+	<body>
+		<h1>__YEAR__ movies and shows tier list</h1>
+		<p>
+		Tier assigment is automated and based on rating I gave on IMDb. <br />
+		Rules:
+		1 &le; Z &lt;
+		2 &le; D &lt;
+		4 &le; C &lt;
+		7 &le; B &lt;
+		9 &le; A &lt;
+		10 &le; S
+		</p>
+		<main>

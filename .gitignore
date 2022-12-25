@@ -1,0 +1,7 @@
+index.html
+node_modules
+package*
+ratings.csv
+posters
+ids
+.env
